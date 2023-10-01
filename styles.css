@@ -1,0 +1,35 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  font-size: .9rem;
+  background: #5f9341;
+  color: #fff;
+  border-radius: 0;
+  border: 0;
+  padding: 8px 15px;
+  margin-top: .5rem;
+}
+
+
+input {
+  font-family: tahoma, Verdana, san-serif;
+  font-size: .8rem;
+  border: 1px solid #5f9341;
+  width: 95%;
+  box-sizing: border-box;
+  padding: 8px;
+  margin: 0px auto;
+}
+
+input[type=text]:focus {
+  background: #e9faff;
+  outline: none;
+}
