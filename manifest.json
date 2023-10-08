@@ -1,0 +1,11 @@
+{
+  "name": "Leads Tracker",
+  "version": "1.0.0",
+  "description": "Tracker for leads",
+  "manifest_version": 3,
+  "author": "Julie Rindone",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "tiny_red_clipboard.png"
+  }
+}

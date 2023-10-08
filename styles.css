@@ -3,33 +3,62 @@ html {
 }
 
 body {
-  margin: 0;
   padding: 10px;
   font-family: Arial, Helvetica, sans-serif;
+  min-width: 400px;
+  margin: 0;
 }
 
 button {
   font-size: .9rem;
-  background: #5f9341;
-  color: #fff;
   border-radius: 0;
-  border: 0;
-  padding: 8px 15px;
+  padding: 6px 15px;
+  border: 2px solid #5f9341;
   margin-top: .5rem;
 }
 
+#input-btn {
+  color: #fff;
+  background: #5f9341;
+}
+
+#delete-btn {
+  color: #5f9341;
+  background: #fff;
+}
+
+#input-btn:hover,
+#delete-btn:hover {
+  color: #5f9341;
+  background: #333;
+}
 
 input {
   font-family: tahoma, Verdana, san-serif;
   font-size: .8rem;
-  border: 1px solid #5f9341;
+  color: #0F4800;
+  border: 2px solid #5f9341;
   width: 95%;
   box-sizing: border-box;
   padding: 8px;
   margin: 0px auto;
 }
 
-input[type=text]:focus {
-  background: #e9faff;
-  outline: none;
+#input-el:focus {
+  background: #f4faea;
+  outline: 1px solid #0F4800;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 1rem;
+  padding-left: 0;
+}
+
+li {
+  margin-top: .1rem;
+}
+
+li a {
+  color: #5f9341;
 }
