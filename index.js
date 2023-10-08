@@ -1,13 +1,10 @@
-//// resource: 
-// https://www.geeksforgeeks.org/how-to-creating-html-list-from-javascript-array/
-
 let myLeads = []
+const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn")
+const ulEl = document.getElementById("list-of-leads")
 const tabBtn = document.getElementById("tab-btn")
 const deleteBtn = document.getElementById("delete-btn")
 
-const inputEl = document.getElementById("input-el")
-const ulEl = document.getElementById("list-of-leads")
 const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
 
 if (leadsFromLocalStorage) {
@@ -29,7 +26,7 @@ function render(leads) {
 }
 
 tabBtn.addEventListener("click", function () {
-  chrome.tabs.query({ active: true, currentWindow: true }, function () {
+  chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
     myLeads.push(tabs[0].url)
     localStorage.setItem("myLeads", JSON.stringify(myLeads))
     render(myLeads)      
